@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Auto Insurance</title>
+  <link rel="stylesheet" href="../css/mdb0.css" />
+  <link rel="stylesheet" href="../css/mdb1.css" />
+  <link rel="stylesheet" href="../css/mdb2.css" />
+  <link rel="stylesheet" href="../css/naveff.css" />
+  <link rel="shortcut icon" href="../img/favicon.png" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <link rel="stylesheet" id="compiled.css-css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.0.min.css?ver=4.7.0"
+    type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
+  <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+ 
+    .stepper-horizontal li:not(:first-child):before {
+      content: "";
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0 0 0;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 3);
+    }
+    .stepper-horizontal li:not(:last-child):after {
+      content: "";
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0 0 0;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 3);
+    }
+ 
+  </style>
+
+<body style="background-color: rgba(243, 243, 243, 1)">
+
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img src="../img/final_logo4.png" style="height:60px; width:95px;" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+        aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nava collapse navbar-collapse " id="navbarSupportedContent-555">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Get a Quote</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Pay Bill</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Claims</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">About US</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline btn-rounded waves-effect btn-md" data-toggle="modal"
+              data-target="#modalLRForm" style="color:black;background-color:white;">
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-c-tabs">
+            <ul class="nav md-pills nav-justified pills-primary mt-4 mx-4" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fas fa-user mr-1"></i>
+                  Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                  Register</a>
+              </li>
+            </ul>
+            <div class="tab-content pt-3">
+              <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input type="text" id="form11" class="form-control form-control-sm" />
+                    <label for="form11">Your email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form12" class="form-control form-control-sm" />
+                    <label for="form12">Your password</label>
+                  </div>
+                  <div class="text-center mt-2">
+                    <button class="btn btn-primary">
+                      Log in <i class="fas fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer display-footer">
+                  <div class="options text-center text-md-right mt-1">
+                    <p>
+                      Not a member? <a href="#" class="blue-text">Sign Up</a>
+                    </p>
+                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary waves-effects ml-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="panel2" role="tabpanel">
+                <div class="modal-body">
+                  <div class="md-form form-sm">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input type="text" id="form13" class="form-control form-control-sm" />
+                    <label for="form13">Your email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form14" class="form-control form-control-sm" />
+                    <label for="form14">Your password</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form15" class="form-control form-control-sm" />
+                    <label for="form15">Repeat password</label>
+                  </div>
+                  <div class="text-center form-sm mt-2">
+                    <button class="btn btn-primary">
+                      Sign up <i class="fas fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="options text-right">
+                    <p class="pt-1">
+                      Already have an account?
+                      <a href="#" class="blue-text">Log In</a>
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary waves-effect ml-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <section>
+    <div class="card card-cascade wider reverse">
+      <div class="view view-cascade overlay">
+        <img class="card-img-top img-fluid" src="../img/Life_img/life1.png" style="background-position: center;" alt="Sample image" />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-light">
+    <div class="container-fluid pt-5 pb-5 card">
+      <div class="card-body card-body-cascade text-center">
+        <h2 class="font-weight-bold"><a>About Life Insurance</a></h2>
+        <h5 class="pt-3 pb-3">
+          Protect your Life with coverage from US Allianz®. Protect your money
+          when you have Auto insurance policy with us.
+        </h5>
+      </div>
+    </div>
+  </section> -->
+
+  <div class="container pt-5" id="about1">
+    <div class="text-center">
+      <h2 style="text-decoration: underline;">Tell me About Yourself</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="stepper stepper-horizontal">
+          <li class="completed">
+            <a href="#!" class="btn btn-primary btn-md "> Your Info </a>
+          </li>
+          <li class="warning">
+            <a href="#!" class="btn btn-info btn-md disabled"> More Info </a>
+          </li>
+          <li class="warning">
+            <a href="#!" class="btn btn-info btn-md disabled"> Quote </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-md-0 mb-5 card" style="padding: 10px;border: 2px solid steelblue">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST" style="padding: 10px;">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="fname" class="form-control" />
+                  <label for="name" class="">Your First name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="lname" class="form-control" />
+                  <label for="email" class="">Your Last name</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input id="datepicker" placeholder="Date of Birth" style="font-family: bitter;" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="materialInline1">Gender :</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample" />
+                  <label class="form-check-label" for="materialInline2">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample" />
+                  <label class="form-check-label" for="materialInline3">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                  <label for="message">Residential Address</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="city" class="form-control" />
+                  <label for="name" class="">City</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="state" class="form-control" />
+                  <label for="email" class="">State</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="zip" class="form-control" />
+                  <label for="name" class="">ZipCode</label>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3 mx-auto">
+              <a href="../index.html" class="pt-3 text-secondary" style="float: left;text-decoration: underline;">Save and Finish Later</a>
+              <a class="btn btn-primary" href="Life_Insurance_moreinfo.html">Continue</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer font-small primary-color ">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Terms of Use</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Privacy Policy</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Follow US</h5>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-google-plus fa-2x"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 pb-5 pt-5 text-center">
+          <img src="../img/final_logo4.png" style="height:80px; width:105px;" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2018 Copyright: <a href="../index.html"> UsAllianz</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.7.0/compiled.192.min.js?ver=4.7.0"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mdb-select").materialSelect();
+    });
+  </script>
+  <script>
+    $("#datepicker").datepicker({
+      showOtherMonths: true
+    });
+  </script>
+</body>
+
+</html>

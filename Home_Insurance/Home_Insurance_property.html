@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home Insurance</title>
+  <link rel="icon" href="../img/final_logo4.png">
+
+  <link rel="stylesheet" href="css/mdb0.css" />
+  <link rel="stylesheet" href="css/mdb1.css" />
+  <link rel="stylesheet" href="css/mdb2.css" />
+  <link rel="stylesheet" href="../css/naveff.css" />
+  <link rel="shortcut icon" href="img/favicon.png" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+
+  <link rel="stylesheet" id="wsl-widget-css" href="https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.9.9"
+    type="text/css" media="all" />
+  <link rel="stylesheet" id="compiled.css-css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.0.min.css?ver=4.7.0"
+    type="text/css" media="all" />
+
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
+
+  <style>
+    .stepper-horizontal li:not(:first-child):before {
+      content: "";
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0 0 0;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 3);
+    }
+    .stepper-horizontal li:not(:last-child):after {
+      content: "";
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0 0 0;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 3);
+    }
+  </style>
+</head>
+
+<body style="background-color: rgba(243, 243, 243, 1)">
+
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="../index.html"><img src="../img/final_logo4.png" style="height:60px; width:95px;" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+        aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="nava collapse navbar-collapse " id="navbarSupportedContent-555">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Get a Quote</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Pay Bill</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Claims</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">About US</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline btn-rounded waves-effect btn-md" data-toggle="modal"
+              data-target="#modalLRForm" style="color:black;background-color:white;">
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-c-tabs">
+            <ul class="nav md-pills nav-justified pills-primary mt-4 mx-4" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fas fa-user mr-1"></i>
+                  Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                  Register</a>
+              </li>
+            </ul>
+            <div class="tab-content pt-3">
+              <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input type="text" id="form11" class="form-control form-control-sm" />
+                    <label for="form11">Your email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form12" class="form-control form-control-sm" />
+                    <label for="form12">Your password</label>
+                  </div>
+                  <div class="text-center mt-2">
+                    <button class="btn btn-primary">
+                      Log in <i class="fas fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer display-footer">
+                  <div class="options text-center text-md-right mt-1">
+                    <p>
+                      Not a member? <a href="#" class="blue-text">Sign Up</a>
+                    </p>
+                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary waves-effects ml-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="panel2" role="tabpanel">
+                <div class="modal-body">
+                  <div class="md-form form-sm">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input type="text" id="form13" class="form-control form-control-sm" />
+                    <label for="form13">Your email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form14" class="form-control form-control-sm" />
+                    <label for="form14">Your password</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form15" class="form-control form-control-sm" />
+                    <label for="form15">Repeat password</label>
+                  </div>
+                  <div class="text-center form-sm mt-2">
+                    <button class="btn btn-primary">
+                      Sign up <i class="fas fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="options text-right">
+                    <p class="pt-1">
+                      Already have an account?
+                      <a href="#" class="blue-text">Log In</a>
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary waves-effect ml-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- 
+  <section>
+    <div class="card card-cascade wider reverse">
+      <div class="view view-cascade overlay">
+        <img class="card-img-top img-fluid" src="../img/Home_img/home_1.png" style="background-position: center;" alt="Sample image" />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-light" id="about">
+    <div class="container-fluid card pt-5 pb-5">
+      <div class="card-body card-body-cascade text-center">
+        <h2 class="font-weight-bold"><a>About Home Insurance</a></h2>
+        <h5 class="pt-3 pb-3">
+          Protect your Home and Family with coverage from US Allianz®. Protect your
+          money when you have Home insurance policy with us.
+        </h5>
+      </div>
+    </div>
+  </section> -->
+
+
+  <div class="container pt-5" id="about1">
+    <div class="text-center pb-5">
+      <h2 style="text-decoration: underline">Enter Property Details</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="stepper stepper-horizontal">
+          <li class="completed">
+            <a href="Home_Insurance_index.html" class="btn btn-info btn-md">
+              Your info
+            </a>
+          </li>
+          <li class="warning">
+            <a href="#!" class="btn btn-primary btn-md">
+              Property
+            </a>
+          </li>
+          <li class="warning">
+            <a href="#!" class="btn btn-info btn-md disabled">
+              Coverage
+            </a>
+          </li>
+          <li class="warning">
+            <a href="#!" class="btn btn-info btn-md disabled">
+              Quote
+            </a>
+          </li>
+          <li class="warning">
+            <a href="#!" class="btn btn-info btn-md disabled">
+              Payment </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-md-0 mb-5 card" style="border: 2px solid steelblue">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <div class="row mt-3">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">Primary</option>
+                  <option value="2">Secondary</option>
+                  <option value="3">Seasonal</option>
+                </select>
+                <label>This property is your :</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">1 Story</option>
+                  <option value="2">1 1/2 Stories</option>
+                  <option value="3">2 Story</option>
+                  <option value="3">2 1/2 Stories</option>
+                  <option value="3">3 Story</option>
+                  <option value="3">Bi-Level / Raised Raunch</option>
+                  <option value="3">Split Level</option>
+                </select>
+                <label>Dwelling Property:</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="year" class="form-control" />
+                  <label for="name" class="">Year of Building House :</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="square" class="form-control" />
+                  <label for="name" class="">Square Footage :</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="" data-icon="captures/1.PNG" class="rounded-circle">Stucco on Frame</option>
+                  <option value="" data-icon="captures/2.png" class="rounded-circle">Brick Veneer</option>
+                  <option value="" data-icon="captures/3.png" class="rounded-circle">Wood siding</option>
+                  <option value="" data-icon="captures/4.png" class="rounded-circle">Stucco on Masonry</option>
+                  <option value="" data-icon="captures/5.png" class="rounded-circle">Steel sliding</option>
+                  <option value="" data-icon="captures/6.png" class="rounded-circle">Aluminum Siding</option>
+                  <option value="" data-icon="captures/7.png" class="rounded-circle">Solid Brick</option>
+                  <option value="" data-icon="captures/8.png" class="rounded-circle">FraSolid Woodnce</option>
+                  <option value="" data-icon="captures/9.png" class="rounded-circle">Solid Stone</option>
+                  <option value="" data-icon="captures/10.png" class="rounded-circle">Vinyl Siding</option>
+                  <option value="" data-icon="captures/11.png" class="rounded-circle">Stone Veneer</option>
+                  <option value="" data-icon="captures/12.png" class="rounded-circle">Clapboard Wood</option>
+                  <option value="" data-icon="captures/13.png" class="rounded-circle">Cement Fiber Siding</option>
+                  <option value="" data-icon="captures/14.png" class="rounded-circle">Wood Shakes</option>
+                  <option value="" data-icon="captures/15.png" class="rounded-circle">Cement Shingles</option>
+                  <option value="" data-icon="captures/16.png" class="rounded-circle">Log Veneer Siding</option>
+                  <option value="" data-icon="captures/17.png" class="rounded-circle">Clapboard Redwood</option>
+                  <option value="" data-icon="captures/18.png" class="rounded-circle">Adobe</option>
+                </select>
+                <label>Exterior wall type :</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">1 Car Attached/Built-in</option>
+                  <option value="2">1 Car Attached with Living Area Above</option>
+                  <option value="3">1 Car carport</option>
+                  <option value="3">2 Car attached/Built-in</option>
+                  <option value="3">2 Car Carport</option>
+                  <option value="1">2 Car attached with Living Area Above</option>
+                  <option value="2">3 Car Attached /Built-in</option>
+                  <option value="3">3 Car Carport</option>
+                  <option value="3">3 Car attached with Living Area Above</option>
+                  <option value="3">4 Car Attached /Built-in</option>
+                  <option value="1">4 Car Carport</option>
+                  <option value="2">Detached</option>
+                  <option value="3">None</option>
+                </select>
+                <label>Type of Garage :</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">Coal</option>
+                  <option value="2">Electric</option>
+                  <option value="3">Gas</option>
+                  <option value="3">Kerosene</option>
+                  <option value="3">Oil</option>
+                  <option value="3">Other/Unknown</option>
+                  <option value="3">Wood</option>
+                </select>
+                <label>What type of heating system is being currently used at
+                  your home?</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="full" class="form-control" />
+                  <label for="name" class="">Number of Full-Bathrooms :</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="half" class="form-control" />
+                  <label for="email" class="">Number of Half-Bathrooms :</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1" data-icon="captures/a.png" class="rounded-circle">Asphalt Shingle</option>
+                  <option value="2" data-icon="captures/b.png" class="rounded-circle">Fiberglass/Dimensional Asphalt</option>
+                  <option value="3" data-icon="captures/c.png" class="rounded-circle">Spanish Tile(Clay)</option>
+                  <option value="3" data-icon="captures/d.png" class="rounded-circle">Wood Shingle/ Shake</option>
+                  <option value="3" data-icon="captures/e.png" class="rounded-circle">Sheet Metal Panel</option>
+                  <option value="1" data-icon="captures/f.png" class="rounded-circle">Single Ply Membrane Systems</option>
+                  <option value="2" data-icon="captures/g.png" class="rounded-circle">Slate</option>
+                  <option value="3" data-icon="captures/h.png" class="rounded-circle">Concrete/Cement-Fiber Tile</option>
+                  <option value="3" data-icon="captures/i.png" class="rounded-circle">Steel (Tile or Shingle)</option>
+                  <option value="3" data-icon="captures/j.png" class="rounded-circle">Rock/Tar Gravel</option>
+                  <option value="1" data-icon="captures/k.png" class="rounded-circle">Aluminum</option>
+                  <option value="2" data-icon="captures/l.png" class="rounded-circle">Copper</option>
+                  <option value="3" data-icon="captures/m.png" class="rounded-circle">Rolled Asphalt-Flat</option>
+                  <option value="3" data-icon="captures/n.png" class="rounded-circle">Synthetic Shingle or Tile</option>
+                </select>
+                <label>Type of Roof :</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="roof" class="form-control" />
+                  <label for="email" class="">How old is the roof :</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="materialInline1">Does your home have any decks
+                    ? :</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample" />
+                  <label class="form-check-label" for="materialInline2">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample" />
+                  <label class="form-check-label" for="materialInline3">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="materialInline4"> Does your have a pool ? :
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</labelc>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline5" name="inlineMaterialRadiosExample1" />
+                  <label class="form-check-label" for="materialInline5">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline6" name="inlineMaterialRadiosExample1" />
+                  <label class="form-check-label" for="materialInline6">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="materialInline7">Does your home have a
+                    basement :</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline8" name="inlineMaterialRadiosExample2" />
+                  <label class="form-check-label" for="materialInline8">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="materialInline9" name="inlineMaterialRadiosExample2 " />
+                  <label class="form-check-label" for="materialInline9">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="phone" class="form-control" />
+                  <label for="name" class="">Phone Number :</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="email" class="form-control" />
+                  <label for="email" class="">Email Address :</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-center mt-5 mb-5 mx-auto">
+                  <a href="../index.html" class="pt-3 text-secondary" style="float: left;text-decoration: underline;">Save
+                    and Finish Later</a>
+                  <a class="btn btn-primary" href="Home_insurance_coverage.html">Continue</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer font-small primary-color ">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Terms of Use</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Privacy Policy</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Follow US</h5>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-google-plus fa-2x"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 pb-5 pt-5 text-center">
+          <img src="../img/final_logo4.png" style="height:80px; width:105px;" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2018 Copyright:
+      <a href="../index.html">
+        US Allianz®</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.7.0/compiled.0.min.js?ver=4.7.0"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/footer-functions.js?ver=4.7.0"></script>
+  <script>
+    // Material Select Initialization
+    // $(document).ready(function () {
+    //   $('.mdb-select').materialSelect();
+    // });
+  </script>
+  <script>
+    $(".datepicker").pickadate({
+      closeOnSelect: false,
+      closeOnClear: false
+    });
+
+    $("#input_starttime").pickatime({
+      twelvehour: true
+    });
+    $("#input_endtime").pickatime({
+      darktheme: true,
+      twelvehour: false
+    });
+  </script>
+</body>
+
+</html>

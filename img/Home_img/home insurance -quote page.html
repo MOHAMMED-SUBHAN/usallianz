@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home Insurance</title>
+    <link rel="stylesheet" href="css/mdb0.css" />
+    <link rel="stylesheet" href="css/mdb1.css" />
+    <link rel="stylesheet" href="css/mdb2.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      id="compiled.css-css"
+      href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.0.min.css?ver=4.7.0"
+      type="text/css"
+      media="all"
+    />
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bitter"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Bitter", serif;
+    }
+
+    .nav-item a {
+      font-size: 20px;
+    }
+    .navbar {
+      margin-bottom: 0px;
+    }
+    .my-5 {
+      margin-top: 0px !important;
+    }
+    i {
+      padding: 5px;
+    }
+    ul.stepper li a {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .stepper-horizontal li:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .stepper-horizontal li:not(:first-child):before {
+      content: "";
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0 0 0;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 3);
+    }
+    .stepper-horizontal li:not(:last-child):after {
+      content: "";
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0 0 0;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 3);
+    }
+
+    @media screen and (max-width: 800px) {
+      
+	  #about h2 {
+		font-size: 18px !important; 
+		font-weight: bold !important; 
+	  }
+	  #about1 h2 {
+		font-size: 18px !important;  
+	  }
+      #about h5 {
+        font-size: 14px !important;
+        text-align: justify !important;
+      }
+	  .stepper .btn-md{
+		  width: 75px !important;
+		  font-size: 5px !important;
+	  }
+    }
+  </style>
+
+
+  <body style="background-color: rgba(243, 243, 243, 1)">
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="css/final_logo4.png"
+            style="height:60px; width:95px;"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent-555"
+          aria-controls="navbarSupportedContent-555"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent-555">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Get a Quote</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Pay Bill</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Claims</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">About US</a>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Dropdown
+                  </a>
+                  <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-outline btn-rounded waves-effect btn-md"
+                data-toggle="modal"
+                data-target="#modalLRForm"
+                style="color:black;background-color:white;"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Modal: Login / Register Form-->
+      <div
+        class="modal fade"
+        id="modalLRForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <!--Modal: Login & Register tabs-->
+        <div class="modal-dialog cascading-modal" role="document">
+          <!--Content-->
+          <div class="modal-content">
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+              <!-- Nav tabs -->
+              <ul
+                class="nav md-pills nav-justified pills-primary mt-4 mx-4"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-toggle="tab"
+                    href="#panel1"
+                    role="tab"
+                    ><i class="fas fa-user mr-1"></i> Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#panel2"
+                    role="tab"
+                    ><i class="fas fa-user-plus mr-1"></i> Register</a
+                  >
+                </li>
+              </ul>
+
+              <!-- Tab panels -->
+              <div class="tab-content pt-3">
+                <!--Panel 1-->
+                <div
+                  class="tab-pane fade in show active"
+                  id="panel1"
+                  role="tabpanel"
+                >
+                  <!--Body-->
+                  <div class="modal-body mb-1">
+                    <div class="md-form form-sm">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input
+                        type="text"
+                        id="form11"
+                        class="form-control form-control-sm"
+                      />
+                      <label for="form11">Your email</label>
+                    </div>
+
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input
+                        type="password"
+                        id="form12"
+                        class="form-control form-control-sm"
+                      />
+                      <label for="form12">Your password</label>
+                    </div>
+                    <div class="text-center mt-2">
+                      <button class="btn btn-primary">
+                        Log in <i class="fas fa-sign-in ml-1"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!--Footer-->
+                  <div class="modal-footer display-footer">
+                    <div class="options text-center text-md-right mt-1">
+                      <p>
+                        Not a member? <a href="#" class="blue-text">Sign Up</a>
+                      </p>
+                      <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary waves-effects ml-auto"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+                <!--/.Panel 1-->
+
+                <!--Panel 2-->
+                <div class="tab-pane fade" id="panel2" role="tabpanel">
+                  <!--Body-->
+                  <div class="modal-body">
+                    <div class="md-form form-sm">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input
+                        type="text"
+                        id="form13"
+                        class="form-control form-control-sm"
+                      />
+                      <label for="form13">Your email</label>
+                    </div>
+
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input
+                        type="password"
+                        id="form14"
+                        class="form-control form-control-sm"
+                      />
+                      <label for="form14">Your password</label>
+                    </div>
+
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input
+                        type="password"
+                        id="form15"
+                        class="form-control form-control-sm"
+                      />
+                      <label for="form15">Repeat password</label>
+                    </div>
+
+                    <div class="text-center form-sm mt-2">
+                      <button class="btn btn-primary">
+                        Sign up <i class="fas fa-sign-in ml-1"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-right">
+                      <p class="pt-1">
+                        Already have an account?
+                        <a href="#" class="blue-text">Log In</a>
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary waves-effect ml-auto"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+                <!--/.Panel 2-->
+              </div>
+            </div>
+          </div>
+          <!--/.Content-->
+        </div>
+        <!--/Modal: Login & Register tabs-->
+      </div>
+      <!--Modal: Login / Register Form-->
+    </nav>
+    <!--/.Navbar -->
+
+    <!-- Section: Blog v.4 -->
+    <section>
+      <!-- Card -->
+      <div class="card card-cascade wider reverse">
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+          <img
+            class="card-img-top img-fluid"
+            src="css/home_1.png"
+            style="background-position: center;"
+            alt="Sample image"
+          />
+          <a href="#!"> <div class="mask rgba-white-slight"></div> </a>
+        </div>
+
+        <!-- Card content -->
+
+        <!-- Card content -->
+      </div>
+      <!-- Card -->
+
+      <!-- Excerpt -->
+    </section>
+    <!-- Section: Blog v.4 -->
+
+    <section class="bg-light" id="about">
+      <div class="container card pt-5 pb-5">
+        <div class="card-body card-body-cascade text-center">
+          <!-- Title -->
+          <h2 class="font-weight-bold"><a>About Home Insurance</a></h2>
+          <!-- Data -->
+          <h5 class="pt-3 pb-3">
+            Protect your Home and Family with coverage from US Allianz®. Protect your
+            money when you have Home insurance policy with us.
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <div class="container pt-5" id="about1">
+      <div class="text-center pb-5"><h2>Your Quote</h2></div>
+
+      <!-- Horizontal Steppers -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Stepers Wrapper -->
+          <ul class="stepper stepper-horizontal">
+            <!-- First Step -->
+            <li class="completed">
+              <a href="#!" class="btn btn-info btn-md text-light">
+                Your info
+              </a>
+            </li>
+
+            <!-- Second Step -->
+            <li class="warning">
+              <a href="#!" class="btn btn-info btn-md text-light">
+                Property
+              </a>
+            </li>
+
+            <!-- Third Step -->
+
+            <li class="warning">
+              <a href="#!" class="btn btn-info btn-md text-light">
+                Coverage
+              </a>
+            </li>
+
+            <li class="warning">
+              <a href="#!" class="btn btn-primary btn-md text-light">
+                Quote
+              </a>
+            </li>
+
+            <li class="warning">
+              <a href="#!" class="btn btn-info btn-md text-light">
+               Payment </a>
+            </li>
+          </ul>
+          <!-- /.Stepers Wrapper -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+<!-- Card -->
+<div class="card">
+
+  <!-- Card image -->
+  <!-- <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap"> -->
+
+  <!-- Card content -->
+  <div class="card-body mt-5 mb-5">
+   
+    <!-- Title -->
+    <h4 class="card-title text-center"><a>Standed package</a></h4>
+    <!-- Text -->
+    <p class="card-text text-center">Basic coverage at a lowest premium.</p>
+    <p class="card-text text-center">$ 20000</p>
+    <!-- Button -->
+    <center><a href="#" class="btn btn-primary">Recalculate</a></center>
+
+  </div>
+
+</div>
+<!-- Card -->
+<div class="col-md-3"></div>
+</div>
+</div>
+
+
+   
+<div class="row">
+   <div class="col-md-12 text-center mt-4">
+       <h3 class="font-weight-bold"><a>Deductibles</a></h3> 
+       <hr>
+   </div>  
+</div>
+</div>
+
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+      <div class="container">
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+
+               <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+						       <div class="row">
+						            <div class="col-md-6 m-b-3">
+						              <!--Blue select-->
+						                <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+								                  <option value="1">$500 </option>
+                                  <option value="2">$750 </option>
+                                  <option value="3">$1000 </option>
+                                  <option value="1">$1250 </option>
+                                  <option value="2">$1500 </option>
+                                  <option value="3">$2000 </option>
+                                  <option value="3">$2500 </option>
+                                  <option value="1">$3000 </option>
+                                  <option value="2">$5000 </option>
+                                  <option value="3">$7500 </option>
+                                  <option value="3">$10000 </option>
+                                  <option value="3">0.5% </option>
+                                  <option value="1">1.0% </option>
+                                  <option value="2">1.5% </option>
+                                  <option value="1">2.0% </option>
+                                  <option value="1">3.0% </option>
+                                  <option value="1">5.0% </option>
+						                </select>
+						              <label>All Peril</label>
+						              <!--/Blue select-->
+						            </div>
+
+
+                         <div class="col-md-6 m-b-3">
+						                <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+								                  <option value="1">$500 </option>
+                                  <option value="2">$750 </option>
+                                  <option value="3">$1000 </option>
+                                  <option value="1">$1250 </option>
+                                  <option value="2">$1500 </option>
+                                  <option value="3">$2000 </option>
+                                  <option value="3">$2500 </option>
+                                  <option value="1">$3000 </option>
+                                  <option value="2">$5000 </option>
+                                  <option value="3">$7500 </option>
+                                  <option value="3">$10000 </option>
+                                  <option value="3">0.5% </option>
+                                  <option value="1">1.0% </option>
+                                  <option value="2">1.5% </option>
+                                  <option value="1">2.0% </option>
+                                  <option value="1">3.0% </option>
+                                  <option value="1">5.0% </option>
+						                </select>
+						              <label>Wind and Hail:</label>						    
+						          </div> 
+						      </div>
+						 </section>
+		            </div>
+                 </div>
+             </div>
+
+   </div>
+
+
+<div class="row">
+   <div class="col-md-12 text-center mt-4">
+       <h3 class="font-weight-bold"><a>Property Coverage </a></h3>  
+         <p class="font-weight-normal"> Limits / Coverage</p>
+       <hr>
+   </div>  
+</div>
+
+
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+
+               <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+                   <div class="row">
+                        <div class="col-md-6 m-b-3">
+                          <!--Blue select-->
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                              <option value="1">100%</option>
+                              <option value="2">90%</option>
+                              <option value="3">80%</option>
+                              <option value="3">70%</option>
+                              <option value="3">60%</option>
+                              <option value="1">50%</option>
+                              <option value="2">40%</option>
+                              <option value="3">30%</option>
+                              <option value="3">20%</option>
+                              <option value="3">10%</option>
+                            </select>
+                          <label>Dwelling:</label>
+                          <!--/Blue select-->
+                        </div>
+
+
+                                   <div class="col-md-6 m-b-3">
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                                  <option value="1">None</option>
+                                  <option value="2">10%</option>
+                                  <option value="3">20%</option>                                  
+                            </select>
+                          <label>Extended Replacement Cost :</label>               
+                      </div> 
+                  </div>
+             </section>
+                </div>
+                 </div>
+             </div>
+
+</div>
+    
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+
+               <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+                   <div class="row">
+                        <div class="col-md-6 m-b-3">
+                          <!--Blue select-->
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                                  <option value="1">5%</option>
+                                  <option value="2">10%</option>                       
+                            </select>
+                          <label>Seperate Structures :</label>
+                          <!--/Blue select-->
+                        </div>
+
+
+                                   <div class="col-md-6 m-b-3">
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                                  <option value="1">40%</option>
+                                  <option value="2">55%</option>
+                            </select>
+                          <label>Personal Property :</label>               
+                      </div> 
+                  </div>
+             </section>
+                </div>
+                 </div>
+             </div>
+
+</div>
+
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+
+               <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+                   <div class="row">
+                        <div class="col-md-6 m-b-3">
+                          <!--Blue select-->
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                                  <option value="1">Yes</option>
+                                  <option value="2">No</option>
+                            </select>
+                          <label>Home Content Coverage :</label>
+                          <!--/Blue select-->
+                        </div>
+
+
+                                   <div class="col-md-6 m-b-3">
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                                  <option value="1">20% / 12 months</option>
+                                  <option value="2">10% / 12 months</option>
+                            </select>
+                          <label>Loss of Use :</label>               
+                      </div> 
+                  </div>
+             </section>
+                </div>
+                 </div>
+             </div>
+
+</div>
+
+
+
+
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+
+               <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+						       <div class="row">
+						            <div class="col-md-6 m-b-3">
+						              <!--Blue select-->
+						                <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+								                  <option value="1">None</option>
+                                  <option value="2">10%</option>
+						                </select>
+						              <label>Building Ordinance or Law Coverage:</label>
+						              <!--/Blue select-->
+						            </div>
+
+
+                                   <div class="col-md-6 m-b-3">
+						                <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+								                  <option value="1">Yes</option>
+                                  <option value="2">No</option>
+						                </select>
+						              <label>Cosmetic wind / Hail damage to metal roof materials:</label>						    
+						          </div> 
+						      </div>
+						 </section>
+		            </div>
+                 </div>
+             </div>
+
+</div>
+
+
+
+
+
+<div class="row">
+   <div class="col-md-12 text-center mt-4">
+       <h3 class="font-weight-bold"><a>Liabilities </a></h3>  
+         <p class="font-weight-normal"> Limits / Deductibles</p>
+       <hr>
+   </div>  
+</div>
+
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+            <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+						       <div class="row">
+						            <div class="col-md-12 m-b-3">
+						              <!--Blue select-->
+						                <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+								              <option value="1">$100,000</option>
+      											  <option value="2">$300,000</option>
+      											  <option value="3">$500,000</option>
+      											  <option value="3">$1,000,000</option>      											  
+						                </select>
+						              <label>Personal Liability</label>
+						              <!--/Blue select-->
+						            </div>
+						      </div>
+						 </section>
+		            </div>
+                 </div>
+             </div>
+
+</div>
+
+
+
+
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+            <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+                   <div class="row">
+                        <div class="col-md-12 m-b-3">
+                          <!--Blue select-->
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                                  <option value="1">$1,000</option>
+                                  <option value="2">$2,000</option>
+                                  <option value="3">$3,000</option>
+
+                            </select>
+                          <label>Medical Payments to Others</label>
+                          <!--/Blue select-->
+                        </div>
+                  </div>
+             </section>
+                </div>
+                 </div>
+             </div>
+
+</div>
+
+
+
+<div class="row">
+   <div class="col-md-12 text-center mt-4">
+       <h3 class="font-weight-bold"><a>Special Limits on Specific Property </a></h3>  
+       <hr>
+   </div>  
+</div>
+
+
+
+<div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+            <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                        <section class="section-preview">
+                   <div class="row">
+                        <div class="col-md-12 m-b-3">
+                          <!--Blue select-->
+                            <select class="mdb-select md-form colorful-select dropdown-primary">
+                              <option value="" disabled selected >-Select any option-</option>
+                              <option value="1">Standard special limits</option>
+                              <option value="2">Enhanced special limits</option>
+                        </select>
+                          <label>Limit Selection</label>
+                          <!--/Blue select-->
+                        </div>
+                  </div>
+             </section>
+                </div>
+                 </div>
+             </div>
+
+</div>
+              
+
+
+            <div class="row">
+              <div class="text-center mt-3 mx-auto">
+                <a
+                  class="btn btn-success btn-sm"
+                  onclick="document.getElementById('contact-form').submit();"
+                  >Save and finish later</a
+                >
+              </div>
+
+
+               <div class="text-center mt-3 mx-auto">
+                <a
+                  class="btn btn-primary"
+                  onclick="document.getElementById('contact-form').submit();"
+                  >Continue</a
+                >
+              </div>
+        
+
+          </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small primary-color ">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold mt-3 mb-4">Terms of Use</h5>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold mt-3 mb-4">Privacy Policy</h5>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold mt-3 mb-4">Follow US</h5>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-google-plus fa-2x"></i>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+        <div class="row">
+          <div class="col-md-12 pb-5 pt-5 text-center">
+            <img
+              src="css/final_logo4.png"
+              style="height:80px; width:105px;"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/">
+          MDBootstrap.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      type="text/javascript"
+      src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.7.0/compiled.192.min.js?ver=4.7.0"
+    ></script>
+
+
+
+
+
+  <!--  <script
+      type="text/javascript"
+      src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.7.0/compiled.0.min.js?ver=4.7.0"
+    ></script> -->
+   <!--  <script
+      type="text/javascript"
+      src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/footer-functions.js?ver=4.7.0"
+    ></script> -->
+
+
+
+
+
+
+    <script>
+     // Material Select Initialization
+$(document).ready(function() {
+ $('.mdb-select').materialSelect();
+});
+    </script>
+
+
+
+    <script>
+      $(".datepicker").pickadate({
+        closeOnSelect: false,
+        closeOnClear: false
+      });
+
+      $("#input_starttime").pickatime({
+        twelvehour: true
+      });
+      $("#input_endtime").pickatime({
+        darktheme: true,
+        twelvehour: false
+      });
+    </script>
+  </body>
+</html>

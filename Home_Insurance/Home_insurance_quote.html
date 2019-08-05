@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home Insurance</title>
+  <link rel="icon" href="../img/final_logo4.png">
+
+  <link rel="stylesheet" href="css/mdb0.css" />
+  <link rel="stylesheet" href="css/mdb1.css" />
+  <link rel="stylesheet" href="css/mdb2.css" />
+  <link rel="stylesheet" href="../css/naveff.css" />
+  <link rel="shortcut icon" href="img/favicon.png" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <link rel="stylesheet" id="wsl-widget-css" href="https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.9.9"
+    type="text/css" media="all" />
+  <link rel="stylesheet" id="compiled.css-css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.0.min.css?ver=4.7.0"
+    type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
+  <style>
+    .stepper-horizontal li:not(:first-child):before {
+            content: "";
+            position: relative;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            margin: 0.5rem 0 0 0;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 3);
+          }
+          .stepper-horizontal li:not(:last-child):after {
+            content: "";
+            position: relative;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            margin: 0.5rem 0 0 0;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 3);
+          }
+   </style>
+</head>
+
+<body style="background-color: rgba(243, 243, 243, 1)">
+
+  <!--Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img src="../img/final_logo4.png" style="height:60px; width:95px;" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+        aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nava collapse navbar-collapse " id="navbarSupportedContent-555">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Get a Quote</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Pay Bill</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Claims</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">About US</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline btn-rounded waves-effect btn-md" data-toggle="modal"
+              data-target="#modalLRForm" style="color:black;background-color:white;">
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-c-tabs">
+            <ul class="nav md-pills nav-justified pills-primary mt-4 mx-4" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fas fa-user mr-1"></i>
+                  Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                  Register</a>
+              </li>
+            </ul>
+            <div class="tab-content pt-3">
+              <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input type="text" id="form11" class="form-control form-control-sm" />
+                    <label for="form11">Your email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form12" class="form-control form-control-sm" />
+                    <label for="form12">Your password</label>
+                  </div>
+                  <div class="text-center mt-2">
+                    <button class="btn btn-primary">
+                      Log in <i class="fas fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer display-footer">
+                  <div class="options text-center text-md-right mt-1">
+                    <p>
+                      Not a member? <a href="#" class="blue-text">Sign Up</a>
+                    </p>
+                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary waves-effects ml-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="panel2" role="tabpanel">
+                <div class="modal-body">
+                  <div class="md-form form-sm">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input type="text" id="form13" class="form-control form-control-sm" />
+                    <label for="form13">Your email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form14" class="form-control form-control-sm" />
+                    <label for="form14">Your password</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fas fa-lock prefix"></i>
+                    <input type="password" id="form15" class="form-control form-control-sm" />
+                    <label for="form15">Repeat password</label>
+                  </div>
+                  <div class="text-center form-sm mt-2">
+                    <button class="btn btn-primary">
+                      Sign up <i class="fas fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="options text-right">
+                    <p class="pt-1">
+                      Already have an account?
+                      <a href="#" class="blue-text">Log In</a>
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary waves-effect ml-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Nav bar end-->
+<!-- 
+  <section>
+    <div class="card card-cascade wider reverse">
+      <div class="view view-cascade overlay">
+        <img class="card-img-top img-fluid" src="../img/Home_img/home_1.png" style="background-position: center;" alt="Sample image" />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-light" id="about">
+    <div class="container-fluid card pt-5 pb-5">
+      <div class="card-body card-body-cascade text-center">
+        <h2 class="font-weight-bold"><a>About Home Insurance</a></h2>
+        <h5 class="pt-3 pb-3">
+          Protect your Home and Family with coverage from US Allianz®. Protect your
+          money when you have Home insurance policy with us.
+        </h5>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="container pt-5" id="about1">
+
+      <div class="text-center p-3">
+        <h2 style="text-decoration: underline">Your Quote</h2>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="stepper stepper-horizontal">
+            <li class="completed">
+              <a href="Home_Insurance_index.html" class="btn btn-info btn-md">
+                Your info
+              </a>
+            </li>
+            <li class="warning">
+              <a href="Home_Insurance_property.html" class="btn btn-info btn-md">
+                Property
+              </a>
+            </li>
+            <li class="warning">
+              <a href="Home_insurance_coverage.html" class="btn btn-info btn-md">
+                Coverage
+              </a>
+            </li>
+            <li class="warning">
+              <a href="#!" class="btn btn-primary btn-md">
+                Quote
+              </a>
+            </li>
+            <li class="warning">
+              <a href="#!" class="btn btn-info btn-md disabled">
+                Payment </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto ">
+          <div class="card">
+            <div class="card-body mt-5 mb-5">
+              <h4 class="card-title text-center"><a>Standed package</a></h4>
+              <p class="card-text text-center">Basic coverage at a lowest premium.</p>
+              <p class="card-text text-center">$ 20000</p>
+              <center><a href="#" class="btn btn-primary">Recalculate</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <br>
+  <section class="mb-4">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-12 mb-md-0 mb-5 card" style="border: 2px solid steelblue">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <div class="row">
+              <div class="col-md-12 text-center mt-4">
+                <h3 class="font-weight-bold"><a>Deductibles</a></h3>
+                <hr>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">$500 </option>
+                  <option value="2">$750 </option>
+                  <option value="3">$1000 </option>
+                  <option value="1">$1250 </option>
+                  <option value="2">$1500 </option>
+                  <option value="3">$2000 </option>
+                  <option value="3">$2500 </option>
+                  <option value="1">$3000 </option>
+                  <option value="2">$5000 </option>
+                  <option value="3">$7500 </option>
+                  <option value="3">$10000 </option>
+                  <option value="3">0.5% </option>
+                  <option value="1">1.0% </option>
+                  <option value="2">1.5% </option>
+                  <option value="1">2.0% </option>
+                  <option value="1">3.0% </option>
+                  <option value="1">5.0% </option>
+                </select>
+                <label>All Peril</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">$500 </option>
+                  <option value="2">$750 </option>
+                  <option value="3">$1000 </option>
+                  <option value="1">$1250 </option>
+                  <option value="2">$1500 </option>
+                  <option value="3">$2000 </option>
+                  <option value="3">$2500 </option>
+                  <option value="1">$3000 </option>
+                  <option value="2">$5000 </option>
+                  <option value="3">$7500 </option>
+                  <option value="3">$10000 </option>
+                  <option value="3">0.5% </option>
+                  <option value="1">1.0% </option>
+                  <option value="2">1.5% </option>
+                  <option value="1">2.0% </option>
+                  <option value="1">3.0% </option>
+                  <option value="1">5.0% </option>
+                </select>
+                <label>Wind and Hail:</label>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12 text-center mt-4">
+                <h3 class="font-weight-bold"><a>Property Coverage </a></h3>
+                <p class="font-weight-normal"> Limits / Coverage</p>
+                <hr>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">100%</option>
+                  <option value="2">90%</option>
+                  <option value="3">80%</option>
+                  <option value="3">70%</option>
+                  <option value="3">60%</option>
+                  <option value="1">50%</option>
+                  <option value="2">40%</option>
+                  <option value="3">30%</option>
+                  <option value="3">20%</option>
+                  <option value="3">10%</option>
+                </select>
+                <label>Dwelling:</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">None</option>
+                  <option value="2">10%</option>
+                  <option value="3">20%</option>
+                </select>
+                <label>Extended Replacement Cost :</label>
+              </div>
+            </div>
+
+
+
+
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">5%</option>
+                  <option value="2">10%</option>
+                </select>
+                <label>Seperate Structures :</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">40%</option>
+                  <option value="2">55%</option>
+                </select>
+                <label>Personal Property :</label>
+              </div>
+            </div>
+
+
+
+
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+                <label>Home Content Coverage :</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">20% / 12 months</option>
+                  <option value="2">10% / 12 months</option>
+                </select>
+                <label>Loss of Use :</label>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">None</option>
+                  <option value="2">10%</option>
+                </select>
+                <label>Building Ordinance or Law Coverage:</label>
+              </div>
+              <div class="col-md-6 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+                <label>Cosmetic wind / Hail damage to metal roof materials:</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 text-center mt-4">
+                <h3 class="font-weight-bold"><a>Liabilities </a></h3>
+                <p class="font-weight-normal"> Limits / Deductibles</p>
+                <hr>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">$100,000</option>
+                  <option value="2">$300,000</option>
+                  <option value="3">$500,000</option>
+                  <option value="3">$1,000,000</option>
+                </select>
+                <label>Personal Liability</label>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">$1,000</option>
+                  <option value="2">$2,000</option>
+                  <option value="3">$3,000</option>
+                </select>
+                <label>Medical Payments to Others</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 text-center mt-4">
+                <h3 class="font-weight-bold"><a>Special Limits on Specific Property </a></h3>
+                <hr>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 m-b-3">
+                <select class="mdb-select md-form colorful-select dropdown-primary">
+                  <option value="" disabled selected>-Select any option-</option>
+                  <option value="1">Standard special limits</option>
+                  <option value="2">Enhanced special limits</option>
+                </select>
+                <label>Limit Selection</label>
+              </div>
+            </div>
+            <div class="text-center mt-5 mb-5 mx-auto">
+              <a href="../index.html" class="pt-3 text-secondary" style="float: left;text-decoration: underline;">Save
+                and Finish Later</a>
+              <a class="btn btn-primary" href="Home_Insurance_payment.html">Continue</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer font-small primary-color ">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Terms of Use</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Privacy Policy</h5>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Follow US</h5>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-google-plus fa-2x"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 pb-5 pt-5 text-center">
+          <img src="../img/final_logo4.png" style="height:80px; width:105px;" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2018 Copyright:
+      <a href="../index.html">
+        Usallianz</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.7.0/compiled.0.min.js?ver=4.7.0"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/footer-functions.js?ver=4.7.0"></script>
+
+  <script>
+    $(".datepicker").pickadate({
+      closeOnSelect: false,
+      closeOnClear: false
+    });
+
+    $("#input_starttime").pickatime({
+      twelvehour: true
+    });
+    $("#input_endtime").pickatime({
+      darktheme: true,
+      twelvehour: false
+    });
+  </script>
+</body>
+
+</html>
